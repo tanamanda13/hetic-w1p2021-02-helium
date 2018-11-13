@@ -15,53 +15,80 @@
 /* Desktop */
 @media (min-width: 320px) {
   body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1000px 1000px 1000px 1000px 1000px;
-    grid-template-areas: "header"
-                         "home"
-                         "produits"
-                         "actualites"
-                         "footer";
+
   }
 
   /* Arrivée page */
 
   .menu {
-    grid-area: header;
-    background-color: red;
+    border: 5px solid red;
+    display: flex;
   }
 
   .section_home_desktop {
-    grid-area: home;
-    background-color: green;
+    border: 5px solid red;
+    height: 100px;
   }
 
   /* PRODUITS */
   .section_produits {
-    grid-area: produits;
-    background-color: cyan;
+    border: 5px solid red;
   }
 
   /* ACTUALITES */
-  .section_actualites {
-    grid-area: actualites;
-    background-color: yellow;
+  .news{
+      border: 5px solid red;
+  }
 
-    /* Bébé grid ACTUALITES */
+  .section_actualites {
+    /* ACTUALITES */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px;
-    grid-template-areas: "header"
-                         "home"
-                         "produits"
-                         "actualites"
-                         "footer";
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: "article_image_spotmini article_image_atlas"
+                         "article_image_spotmini_title article_image_atlas_title"
+                         "article_lire_sportmini article_lire_atlas";
+  }
 
+  .text_section_actualites {
+    text-align: center;
+  }
+  /* Spotmini */
+  .image_section_actualites_articles_spotmini{
+    grid-area: article_image_spotmini;
+  }
+
+  .image_section_actualites_articles_spotmini_text {
+    grid-area: article_image_spotmini_title;
+  }
+
+  .text_articles_voir_spotmini {
+    grid-area: article_lire_sportmini;
+  }
+
+  /* Atlas */
+  .image_section_actualites_articles_atlas {
+    grid-area: article_image_atlas;
+  }
+
+  .image_section_actualites_atlas_text {
+    grid-area: article_image_atlas_title;
+  }
+
+  .text_articles_voir_atlas {
+    grid-area: article_lire_atlas;
+  }
+
+  .text_articles_voir {
+    text-align: center;
   }
 
 
+
+
+
+  /* Footer */
   footer {
-    grid-area: footer;
-    background-color: red;
+    border: 5px solid red;
+    display: flex;
 }

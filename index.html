@@ -19,8 +19,16 @@
   <!-- Corps du site -->
   <body>
 
-    <!-- Contenu de la page -->
-    <main>
+    <header>
+      <nav>
+        <ul class="menu menu_disposition">
+          <li><a class ="menu_composant" href="">Acceuil</a></li>
+          <li><a class ="menu_composant" href="">Produits</a></li>
+          <li><a class ="menu_composant" href="">Articles</a></li>
+          <li><a class ="menu_composant" href="">A propos</a></li>
+          <li><a class ="menu_composant" href="">Contact</a></li>
+        <ul>
+      </nav>
 
       <!--Première image arrivée site mobile-->
       <section class="section_home_mobile">
@@ -31,18 +39,11 @@
       <section class="section_home_desktop">
         <div class="video_home"></div>
       </section>
-
-
+    </header>
+    <!-- Contenu de la page -->
+    <main>
       <!-- Menu du site -->
-      <nav>
-        <ul class="menu menu_disposition">
-          <li><a class ="menu_composant" href="">Acceuil</a></li>
-          <li><a class ="menu_composant" href="">Produits</a></li>
-          <li><a class ="menu_composant" href="">Articles</a></li>
-          <li><a class ="menu_composant" href="">A propos</a></li>
-          <li><a class ="menu_composant" href="">Contact</a></li>
-        <ul>
-      </nav>
+
 
       <!-- Section produits -->
       <section class="section_produits">
@@ -64,39 +65,63 @@
         </div>
       </section>
 
+
+
+
       <!-- Section actualité -->
-      <section class="section_actualites">
+      <section class="news">
+
         <div class="text_section_actualites">
           <p>
             ACTUALITES
           </p>
         </div>
 
+        <article class="section_actualites">
+        <!-- Section sportmini -->
         <div class="image_section_actualites_articles_spotmini"></div>
         <div class="image_section_actualites_articles_spotmini_text">
           <p>
-            VOIR TOUS LES PRODUITS
+            Le robot de Boston Dynamics sait maitenant faire le moonwalk
+          </p>
+        </div>
+        <div class="text_articles_voir_spotmini">
+          <p>
+            LIRE L'ARTICLE
           </p>
         </div>
 
+        <!-- Section atlas -->
         <div class="image_section_actualites_articles_atlas"></div>
         <div class="image_section_actualites_atlas_text">
           <p>
-            VOIR TOUS LES PRODUITS
+            Quand le robot Atlas de Boston Dynamics devient un pro du parkour !
           </p>
         </div>
-
-        <div class="text_articles_voir">
+        <div class="text_articles_voir_atlas">
           <p>
-            LIRE TOUS LES ARTICLES
+            LIRE L'ARTICLE
           </p>
         </div>
-      </section>
-      
+      </article>
+
+      <!-- Bouton tout afficher -->
+      <div class="text_articles_voir">
+        <p>
+          LIRE TOUS LES ARTICLES
+        </p>
+      </div>
+    </section>
+
     </main>
 
       <!-- fin de page -->
       <footer>
+        <div class="">
+          <p>
+            © 2018 Boston Dynamics
+          </p>
+        </div>
         <div class="">
           <p>
             Accueil
