@@ -6,3 +6,83 @@
 * {
   box-sizing: border-box;
 }
+
+/* Configaration mobile */
+
+@media (min-width: 320px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 100px auto 100px auto auto auto 100px 100px auto 100px auto 100px 100px 100px;
+    grid-template-areas:
+
+                         "image_boston_arrivee image_boston_arrivee image_boston_arrivee"
+                         "header header header"
+                         ". produit_titre ."
+                         "image_spotmini image_spotmini image_spotmini"
+                         "image_atlas image_atlas image_atlas"
+                         "image_handle image_handle image_handle"
+                         ". produit_voir ."
+                         ". actualité ."
+                         "image_article_spotmini image_article_spotmini image_article_spotmini"
+                         "image_article_spotmini_title image_article_spotmini_title image_article_spotmini_title"
+                         "image_article_atlas image_article_atlas image_article_atlas"
+                         "image_article_atlas_title image_article_atlas_title image_article_atlas_title"
+                         ". text_lire ."
+                         "footer footer footer"
+  }
+
+  /* Arrivée page */
+
+  .section_home {
+    grid-area: image_boston_arrivee;
+  }
+
+  .menu {
+    grid-area: header;
+  }
+
+  /* PRODUITS */
+
+  .text_section_produits {
+    grid-area: produit_titre;
+  }
+
+  .image_section_produits_spotmini {
+    grid-area: image_spotmini;
+  }
+  .image_section_produits_atlas {
+    grid-area: image_atlas;
+  }
+  .image_section_produits_handle {
+    grid-area: image_handle;
+  }
+  .text_produits_voir {
+    grid-area: produit_voir;
+  }
+
+  /* ACTUALITE */
+
+  .text_section_actualites {
+    grid-area: actualité;
+  }
+  .image_section_actualites_articles_spotmini {
+    grid-area: image_article_spotmini;
+  }
+  .image_section_actualites_articles_spotmini_text {
+    grid-area: image_article_spotmini_title;
+  }
+
+  .image_section_actualites_articles_atlas {
+    grid-area: image_article_atlas;
+  }
+  .image_section_actualites_atlas_text {
+    grid-area: image_article_atlas_title;
+  }
+  .text_articles_voir {
+    grid-area: text_lire;
+  }
+  .footer_gototop {
+    grid-area: footer;
+  }
+}
