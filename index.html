@@ -10,19 +10,33 @@
     <title>Boston Dynamics</title>
     <!-- Remplir la description de la meta -->
     <meta name="description" content="Présentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Importation du CSS -->
     <link rel="stylesheet" href ="css\reset.css" charset=UTF-8 media="all" />
-    <link rel="stylesheet" href ="css\style.css" charset=UTF-8 media="all" />
+    <link rel="stylesheet" href ="css/style.css" charset=UTF-8 media="all" />
+    <link rel="icon" href="../images/favicon.png">
 
   </head>
 
   <!-- Corps du site -->
   <body>
 
-    <header>
+    <!-- Contenu de la page -->
+    <main>
+
+
+      <!--Première image arrivée site -->
+      <section class="section_home">
+        <div class="image_home"></div>
+      </section>
+
+      <!-- Menu du site -->
       <nav>
         <ul class="menu menu_disposition">
-          <li><a class ="menu_composant" href="">Accueil</a></li>
+          <div class="toggle">
+          	<i class="burger"></i>
+          </div>
+          <li><a class ="menu_composant" href="">Acceuil</a></li>
           <li><a class ="menu_composant" href="">Produits</a></li>
           <li><a class ="menu_composant" href="">Articles</a></li>
           <li><a class ="menu_composant" href="">A propos</a></li>
@@ -30,116 +44,72 @@
         <ul>
       </nav>
 
-      <!--Première image arrivée site mobile-->
-      <section class="section_home_mobile">
-        <div class="image_home"></div>
-      </section>
-
-      <!--Vidéo arrivée site web-->
-      <section class="section_home_desktop">
-        <div class="video_home"></div>
-      </section>
-    </header>
-    <!-- Contenu de la page -->
-    <main>
-      <!-- Menu du site -->
-
-
       <!-- Section produits -->
       <section class="section_produits">
-
         <div class="text_section_produits">
           <p>
             PRODUITS
           </p>
         </div>
+		<div class="produits">
+          <div class="img image_section_produits_spotmini"><span class="txt1">Spotmini</span></div>
+          <div class="img image_section_produits_atlas"><span class="txt2">Atlas</span></div>
+          <div class="img image_section_produits_handle"><span class="txt3">Handle</span></div>
+		</div>
 
-        <div class="image_section_produits_spotmini"></div>
-        <div class="image_section_produits_atlas"></div>
-        <div class="image_section_produits_handle"></div>
-
-        <div class="text_produits_voir">
-          <p>
-            VOIR TOUS LES PRODUITS
-          </p>
-        </div>
+        <!-- <a class="text_produits_voir" href="">VOIR TOUS LES PRODUITS</a> -->
       </section>
 
-
-
-
       <!-- Section actualité -->
-      <section class="news">
-
+      <section class="section_actualites">
         <div class="text_section_actualites">
           <p>
             ACTUALITES
           </p>
         </div>
 
-        <article class="section_actualites">
-        <!-- Section sportmini -->
-        <div class="image_section_actualites_articles_spotmini"></div>
+        <div class="img image_section_actualites_articles_spotmini"></div>
         <div class="image_section_actualites_articles_spotmini_text">
           <p>
-            Le robot de Boston Dynamics sait maitenant faire le moonwalk
-          </p>
-        </div>
-        <div class="text_articles_voir_spotmini">
-          <p>
-            LIRE L'ARTICLE
+            Le robot de Boston Dynamics sait mainteant faire le moonwalk</s>
           </p>
         </div>
 
-        <!-- Section atlas -->
-        <div class="image_section_actualites_articles_atlas"></div>
+        <div class="img image_section_actualites_articles_atlas"></div>
         <div class="image_section_actualites_atlas_text">
           <p>
-            Quand le robot Atlas de Boston Dynamics devient un pro du parkour !
+            Qaund le robot Atlas de Boston Dynamics deveint un pro du parkour !
           </p>
         </div>
-        <div class="text_articles_voir_atlas">
+
+        <div class="text_articles_voir">
           <p>
-            LIRE L'ARTICLE
+            LIRE TOUS LES ARTICLES
           </p>
         </div>
-      </article>
-
-      <!-- Bouton tout afficher -->
-      <div class="text_articles_voir">
-        <p>
-          LIRE TOUS LES ARTICLES
-        </p>
-      </div>
-    </section>
-
+      </section>
     </main>
 
       <!-- fin de page -->
       <footer>
-        <div class="">
-          <p>
-            © 2018 Boston Dynamics
-          </p>
-        </div>
-        <div class="">
-          <p>
-            Accueil
-          </p>
-        </div>
-        <div class="">
-          <p>
-            A propos de nous
-          </p>
-        </div>
-        <div class="">
-          <p>
-            Go to top
-          </p>
-        </div>
+      	<p class="copyright"> 2018 Boston Dynamics</p>
+      	<div class="footer-flex">
+	        <div class="footer_accueil">
+	          <p>
+	            Accueil
+	          </p>
+	        </div>
+	        <div class="footer_apropos">
+	          <p>
+	            A propos de nous
+	          </p>
+	        </div>
+	        <div class="footer_gototop">
+	          <p>
+	            Go to top
+	          </p>
+	        </div>
+      	</div>
       </footer>
-
-
-
   </body>
 </html>

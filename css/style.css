@@ -5,90 +5,249 @@
 
 * {
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  font-family: sans-serif;
 }
 
 /* Configaration mobile */
 
-
-
-
-/* Desktop */
-@media (min-width: 320px) {
-  body {
-  }
-
   /* Arrivée page */
 
-  .menu {
-    border: 5px solid red;
-    display: flex;
+.section_home {
+  position: relative;
+  grid-area: image_boston_arrivee;
+  height: 100vh;
+  background-image: url(../images/RobotHome.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section_home:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .3);
+}
+.image_home{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  height: 180px;
+  background-image: url(../images/LogoBoston.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+}
+.menu {
+  position: fixed;
+  grid-area: header;
+  height: 60px;
+  width: 100%;
+  z-index: 6;
+  top: 0;
+}
+.toggle{
+  margin: 12.5px 0 0 12.5px;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  /*border: 2px solid #fff;*/
+}
+.toggle i{
+  width: 25px;
+  left: 50%;
+}
+.toggle i,
+.toggle i:before,
+.toggle i:after {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  height: 2px;
+  background-color: #0A314F;
+  left:
+}
+.toggle i:before {
+  top: 600%;
+  width: 20px;
+  left: 40%;
   }
+.toggle i:after{
+  top: -500%;
+  width: 30px;
+  left: 60%;
+}
+.menu a {
+  display: none;
+}
 
-  .section_home_desktop {
-    border: 5px solid red;
-    height: 100px;
-  }
+/* PRODUITS */
+.section_produits{
+  margin: 50px 0;
+  text-align: center;
+}
+.text_section_produits{
+  text-align: center;
+}
+.text_section_produits p{
+  color: #0A314F;
+  font-weight: bold;
+}
+.produits{
+  display: grid;
+  margin: 20px 0 100px 0;
+  width: 100%;
+}
+.produits .img{
+  position: relative;
+  width: 150px;
+  text-align: left;
+  height: 200px;
+}
+.section_produits .img .txt1,
+.section_produits .img .txt3 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 35%;
+  top: 20%;
+  color: #fff;
+  font-weight: bold;
+}
+.section_produits .img .txt2{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 60%;
+  color: #0A314F;
+  font-weight: bold;
+  top: 20%;
+}
+.image_section_produits_spotmini {
+  grid-area: image_spotmini;
+  grid-row: 1;
+  margin-left: -100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 124, 187, .2);
+}
+.image_section_produits_spotmini:before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 70%;
+  background-image: url(../images/Pr1Spotmini.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 125px;
+}
+.image_section_produits_atlas {
+  grid-area: image_atlas;
+  grid-row: 2;
+  margin-right: -1000px;
+  margin-top: 20px;
+  border: 1.5px solid rgba(0,0,0, .2);
+  margin-bottom: 10px;
+}
+.image_section_produits_atlas:before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 20%;
+  background-image: url(../images/Pr2Atlas.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 120px;
+  height: 200px;
+}
+.image_section_produits_handle {
+  grid-area: image_handle;
+  grid-row: 3;
+  margin-left: -100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 124, 187, .2);
+}
+.image_section_produits_handle:before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 75%;
+  background-image: url(../images/Pr3Handle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 250px;
+}
+.text_produits_voir {
+  grid-area: produit_voir;
+  border-radius: 30px;
+  padding: 10px 15px;
+  border: 2px solid #000;
+  width: 100%;
+}
 
-  /* PRODUITS */
-  .section_produits {
-    border: 5px solid red;
-  }
-
-  /* ACTUALITES */
-  .news{
-      border: 5px solid red;
-  }
-
-  .section_actualites {
-    /* ACTUALITES */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-areas: "article_image_spotmini article_image_atlas"
-                         "article_image_spotmini_title article_image_atlas_title"
-                         "article_lire_sportmini article_lire_atlas";
-  }
-
-  .text_section_actualites {
-    text-align: center;
-  }
-  /* Spotmini */
-  .image_section_actualites_articles_spotmini{
-    grid-area: article_image_spotmini;
-  }
-
-  .image_section_actualites_articles_spotmini_text {
-    grid-area: article_image_spotmini_title;
-  }
-
-  .text_articles_voir_spotmini {
-    grid-area: article_lire_sportmini;
-  }
-
-  /* Atlas */
-  .image_section_actualites_articles_atlas {
-    grid-area: article_image_atlas;
-  }
-
-  .image_section_actualites_atlas_text {
-    grid-area: article_image_atlas_title;
-  }
-
-  .text_articles_voir_atlas {
-    grid-area: article_lire_atlas;
-  }
-
-  .text_articles_voir {
-    text-align: center;
-  }
-
-
-
-
-
-  /* Footer */
-  footer {
-    border: 5px solid red;
-
-    display: flex;
+/* ACTUALITE */
+.section_actualites{
+  text-align: center;
+}
+.section_actualites p{
+  color: #0A314F;
+  font-weight: bold;
+}
+.section_actualites .img{
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #000;
+}
+.text_section_actualites{
+  grid-area: actualité;
+  text-align: center;
+}
+.image_section_actualites_articles_spotmini {
+  grid-area: image_article_spotmini;
+}
+.image_section_actualites_articles_spotmini_text {
+  grid-area: image_article_spotmini_title;
+  margin-bottom: 25px;
+  text-align: left;
+  padding: 0 15px;
+}
+.image_section_actualites_articles_atlas {
+  grid-area: image_article_atlas;
+}
+.image_section_actualites_atlas_text {
+  grid-area: image_article_atlas_title;
+  text-align: left;
+  padding: 0 15px;
+}
+.text_articles_voir {
+  grid-area: text_lire;
+}
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 2px solid #000;
+}
+.copyright{
+  text-align: center;
+}
+.footer-flex{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
