@@ -15,7 +15,6 @@
 /* Desktop */
 @media (min-width: 320px) {
   body {
-
   }
 
   /* Arrivée page */
@@ -90,5 +89,6 @@
   /* Footer */
   footer {
     border: 5px solid red;
+
     display: flex;
 }

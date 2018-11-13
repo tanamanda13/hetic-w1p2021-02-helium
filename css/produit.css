@@ -1,0 +1,63 @@
+/* Mobile
+* Date: 13/11/2018
+*/
+body {
+
+
+}
+
+
+
+.section_home{
+  border: 5px solid red;
+  height: 100px;
+}
+
+.specifications_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "skills_1 skills_3 skills_4"
+                       "skills_2 skills_3 skills_5";
+}
+
+.skills_1 {
+  grid-area: skills_1;
+  background-color: red;
+}
+
+.skills_2 {
+  grid-area: skills_2;
+  background-color: cyan;
+}
+
+.skills_3 {
+  grid-area: skills_3;
+  background-color: green;
+  align-content: center;
+}
+
+.skills_4 {
+  grid-area: skills_4;
+  background-color: blue;
+}
+
+.skills_5 {
+  grid-area: skills_5;
+  background-color: purple;
+}
+
+/* DESCRIPTION */
+.description_produit {
+  border: 5px solid red;
+}
+
+.description_title{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.description_text {
+  margin-top: 10px;
+  text-align: center;
+}
