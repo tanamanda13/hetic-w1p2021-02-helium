@@ -238,8 +238,11 @@
 .text_articles_voir {
   grid-area: text_lire;
 }
+
+/* Footer */
+
 footer {
-  margin-top: 20px;
+  bottom: 0px;
   padding: 20px;
   border-top: 2px solid #000;
 }

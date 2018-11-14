@@ -1,0 +1,51 @@
+/*
+* Date : 14/11/2019
+*/
+
+.product-img::before{
+  content: '';
+  position: absolute;
+  height: 300px;
+  width: 200px;
+  background-image: url(../images/Pr3Handle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pictogramme{
+  position: relative;
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: -350px;
+  width: 300px;
+  height: 300px;
+}
+.pictogramme::before{
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/Pictos.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover 500px;
+}
+
+/* Robot bannière */
+.spotmini {
+  margin-top: 80px;
+  width: 150px;
+  height: 100px;
+}
+
+.atlas {
+  width: 10%;
+  height: 10%;
+}
+
+.handle {
+  margin-top: 60px;
+  width: 140px;
+  height: 140px;
+}
