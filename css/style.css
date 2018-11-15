@@ -211,15 +211,34 @@ BANNER
 	position: relative;
 	display: flex;
 	flex-flow: wrap;
+	justify-content: space-around;
+	margin: 300px auto 150px auto;
+	align-items: center;
 }
 .product {
+	display: inline-block;
 	position: relative;
-	height: 100vh;
-	width: 100%;
-	z-index: 1;
-
+	width: 300px;
+	height: 300px;
+	background-image: url(../images/spotmini.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all .5s ease-in-out;
 }
-.product:before,
+.product:nth-child(2) {
+	height: 450px;
+	background-image: url(../images/atlas.png);
+}
+.product:nth-child(3) {
+	height: 450px;
+	background-image: url(../images/handle.png);
+}
+.product:hover{
+	transform: scale(1.2);
+}
+
+/* .product:before,
 .product:nth-child(2):before {
 	content: '';
 	position: absolute;
@@ -271,7 +290,7 @@ BANNER
 	height: 100vh;
 	margin: auto;
 	width: 300px;
-	/*background-color: yellow*/
+	/*background-color: yellow
 }
 .product-skill p,
 .product-skill p:nth-child(2),
@@ -321,7 +340,7 @@ BANNER
 	border-right: none;
 	border-bottom: none;
 	border-left: 2px solid #000;
-}
+} */
 
 .content{
 	position: relative;
@@ -656,7 +675,7 @@ ARTICLE PAGE
 .article-main {
 	position: relative;
 	padding: 50px 0;
-	z-index: -1;
+	z-index: ;
 }
 .article-main:before,
 .article-main:after {
@@ -802,6 +821,18 @@ ARTICLE PAGE
 	}
 	.articles:before{
 		background: none;
+	}
+	.article{
+		width: 500px;
+		height: 350px;
+	}
+	.article .article-img,
+	.article:nth-child(2) .article-img{
+		height: 300px;
+		width: 100%;
+	}
+	.article h1{
+		line-height: 50px;
 	}
 	.story{
 		background: none;
