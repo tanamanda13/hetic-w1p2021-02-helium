@@ -3,4 +3,5 @@ var open = document.getElementById('open');
 
 open.addEventListener('click', function() {
   nav.classList.toggle('is-open');
+  console.log("ouvre toi petite");
 });
